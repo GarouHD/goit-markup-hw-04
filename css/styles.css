@@ -123,6 +123,7 @@ body {
 .nav-bar-link:hover,
 .nav-bar-link:focus {
   color: var(--text-color-accent);
+  outline: none;
 }
 
 .header-email-phone {
@@ -136,6 +137,7 @@ body {
 .header-email-phone:hover,
 .header-email-phone:focus {
   color: var(--text-color-accent);
+  outline: none;
 }
 
 .header-email-phone-container {
@@ -325,6 +327,7 @@ body {
   color: var(--white);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+  outline: none;
 }
 
 .product-button-container:not(:last-child) {
@@ -367,9 +370,15 @@ body {
   margin-left: 30px;
 }
 
-.product-card:hover {
+.product-card-link {
+  display: block;
+}
+
+.product-card-link:hover,
+.product-card-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
 }
 
 .header-email-icon {
@@ -390,7 +399,7 @@ body {
 }
 
 .social-media-icon {
-  fill: var(--social-icon-fill);
+  fill: currentColor;
 }
 
 .socials-circle {
@@ -399,16 +408,14 @@ body {
   border-radius: 100%;
   padding: 12px;
   display: block;
+  color: var(--social-icon-fill);
 }
 
 .socials-circle:hover,
 .socials-circle:focus {
   background-color: var(--text-color-accent);
-}
-
-.socials-circle:hover .social-media-icon,
-.socials-circle:focus .social-media-icon {
-  fill: var(--white);
+  color: var(--white);
+  outline: none;
 }
 
 .our-team-socials-li:not(:last-child) {
@@ -442,6 +449,7 @@ body {
 .customer-card:hover,
 .customer-card:focus {
   border: 1px solid var(--text-color-accent);
+  outline: none;
 }
 
 .customer-card:hover .customer-icon,
@@ -460,6 +468,7 @@ body {
 
 footer .socials-circle {
   background-color: rgba(255, 255, 255, 0.1);
+  color: var(--white);
 }
 
 .footer-items-ul {
